@@ -1,22 +1,46 @@
-puts "Oh boy. You made it just time! The bridge, behind you, just happened to crumble and there is now
-only one way forward! You only have one way to go, unless you want to fall to your doom."
+puts "Welcome to
+
+
+   ▄▄▄▄▀ █▄▄▄▄ ████▄ █    █         ▄█▄    ████▄    ▄     ▄▄▄▄▀ █▄▄▄▄ ████▄ █
+▀▀▀ █    █  ▄▀ █   █ █    █         █▀ ▀▄  █   █     █ ▀▀▀ █    █  ▄▀ █   █ █
+    █    █▀▀▌  █   █ █    █         █   ▀  █   █ ██   █    █    █▀▀▌  █   █ █
+   █     █  █  ▀████ ███▄ ███▄      █▄  ▄▀ ▀████ █ █  █   █     █  █  ▀████ ███▄
+  ▀        █             ▀    ▀     ▀███▀        █  █ █  ▀        █             ▀
+          ▀                                      █   ██          ▀
+
+
+
+---------------------------------------------------------------------------------
+Created by Madelene Campos at Wyncode Academy
+
+---------------------------------------------------------------------------------
+26 September, 2015
+REPL game project"
+
+
+#introduced the REPL game
+
+
+
+
+
+
+#gave directions to the user
+puts "Oh boy. You made it just time! The bridge, behind you, just happened to crumble and there is now only one way forward! You only have one way to go, unless you want to fall to your doom."
 
 puts "Type (F) to walk forward now."
-print "> "
+print "> " #this will present a prompt for the user
 
-walk = gets.chomp.downcase
+walk = gets.chomp.downcase #allows the user to type the above direction
 
-puts "Phew. That was a close one! If only every decision were that easy. If you look around,
-you will notice that you are in the hall of a magnificent lobby. Unfortunately, the monsters
-who were living under the bridge have climbed up just in time and are looking for you. It's probably
-best if you leave the lobby. You have a few options. If you walk (W)est, you will reach the kitchen. Choose (E)ast, and you are in the bedroom. Go (N)orth, and you will reach the gazebo. If you choose (S)outh, you will end up falling to your doom. No big deal. Your choice."
+puts "Phew. That was a close one! If only every decision were that easy. If you look around, you will notice that you are in the hall of a magnificent lobby. Unfortunately, the trolls who were living under the bridge have climbed up just in time and are looking for you. It's probably best if you leave the lobby. You have a few options. If you walk (W)est, you will reach the kitchen. Choose (E)ast, and you are in the bedroom. Go (N)orth, and you will reach the gazebo. If you choose (S)outh, you will end up falling to your doom. No big deal. Your choice."
 
 puts "Choose which direction you would like to go"
 print "> "
 
 direction = gets.chomp.downcase
 
-if direction == "w" || direction == "west"
+if direction == "w" || direction == "west" #if/then statements
   puts "You must be hungry! Welcome to the kitchen. The trolls are on their way, so you can't really stay here TOO long, but you may as well stay for a snack. Choose (S)nack to eat a tasty treat. If you'd like to leave immediately, there is always the option of going out the (D)oor to the north."
 
   puts "Choose what you would like to do."
@@ -29,6 +53,21 @@ if direction == "w" || direction == "west"
     puts "YAY! You escaped those idiots. Congrats!"
     puts "
 
+# ░░░░░░░░░░░░░░░░░░░░░░█████████
+# ░░███████░░░░░░░░░░███▒▒▒▒▒▒▒▒███
+# ░░█▒▒▒▒▒▒█░░░░░░░███▒▒▒▒▒▒▒▒▒▒▒▒▒███
+# ░░░█▒▒▒▒▒▒█░░░░██▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██
+# ░░░░█▒▒▒▒▒█░░░██▒▒▒▒▒██▒▒▒▒▒▒██▒▒▒▒▒███
+# ░░░░░█▒▒▒█░░░█▒▒▒▒▒▒████▒▒▒▒████▒▒▒▒▒▒██
+# ░░░█████████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██
+# ░░░█▒▒▒▒▒▒▒▒▒▒▒▒█▒▒▒▒▒▒▒▒▒█▒▒▒▒▒▒▒▒▒▒▒██
+# ░██▒▒▒▒▒▒▒▒▒▒▒▒▒█▒▒▒██▒▒▒▒▒▒▒▒▒▒██▒▒▒▒██
+# ██▒▒▒███████████▒▒▒▒▒██▒▒▒▒▒▒▒▒██▒▒▒▒▒██
+# █▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█▒▒▒▒▒▒████████▒▒▒▒▒▒▒██
+# ██▒▒▒▒▒▒▒▒▒▒▒▒▒▒█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██
+# ░█▒▒▒███████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██
+# ░██▒▒▒▒▒▒▒▒▒▒████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█
+# ░░████████████░░░█████████████████
 
 
 
@@ -56,6 +95,21 @@ if direction == "e" || direction == "east"
     puts "Phew. Be glad you didn't take a nap. You not only progressed to the next room, you have SURVIVED. Good job."
     puts "
 
+# ░░░░░░░░░░░░░░░░░░░░░░█████████
+# ░░███████░░░░░░░░░░███▒▒▒▒▒▒▒▒███
+# ░░█▒▒▒▒▒▒█░░░░░░░███▒▒▒▒▒▒▒▒▒▒▒▒▒███
+# ░░░█▒▒▒▒▒▒█░░░░██▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██
+# ░░░░█▒▒▒▒▒█░░░██▒▒▒▒▒██▒▒▒▒▒▒██▒▒▒▒▒███
+# ░░░░░█▒▒▒█░░░█▒▒▒▒▒▒████▒▒▒▒████▒▒▒▒▒▒██
+# ░░░█████████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██
+# ░░░█▒▒▒▒▒▒▒▒▒▒▒▒█▒▒▒▒▒▒▒▒▒█▒▒▒▒▒▒▒▒▒▒▒██
+# ░██▒▒▒▒▒▒▒▒▒▒▒▒▒█▒▒▒██▒▒▒▒▒▒▒▒▒▒██▒▒▒▒██
+# ██▒▒▒███████████▒▒▒▒▒██▒▒▒▒▒▒▒▒██▒▒▒▒▒██
+# █▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█▒▒▒▒▒▒████████▒▒▒▒▒▒▒██
+# ██▒▒▒▒▒▒▒▒▒▒▒▒▒▒█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██
+# ░█▒▒▒███████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██
+# ░██▒▒▒▒▒▒▒▒▒▒████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█
+# ░░████████████░░░█████████████████
 
 
 
@@ -66,7 +120,7 @@ if direction == "e" || direction == "east"
 end
 
 if direction == "n" || direction == "north"
-abort("CONGRATULATIONS. You have found the most amazing path out of this joint and away from the monsters.")
+abort("CONGRATULATIONS. You have found the most amazing path out of this joint and away from the evil trolls.")
 end
 
 if direction == "s" || direction == "south"
