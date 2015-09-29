@@ -1,4 +1,0 @@
-require #the file you want to link './game.rb'
-include #the file with the drawings
-
-call the method (start_game)
