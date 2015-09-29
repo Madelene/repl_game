@@ -49,9 +49,6 @@ walk = gets.chomp.downcase #allows user input
 #   puts
 # end
 
-
-
-
 if walk == "f" || walk == "forward"
   puts "Phew. That was a close one!"
   sleep(2)
@@ -86,7 +83,6 @@ direction = gets.chomp.downcase
 puts "
 
 "
-
 # loop do
 #   puts " Enter choice or Q to quit"
 #   direction = gets.chomp.downcase
@@ -108,7 +104,6 @@ puts "
 # end
 
 # the loop would be in lieu of the if statements
-
 
 if direction == "w" || direction == "west" #if/then statements
   puts "You must be hungry! Welcome to the kitchen. The trolls are on their way, so you can't really stay here TOO long, but you may as well stay for a snack. Choose (S)nack to eat a tasty treat. If you'd like to leave immediately, there is always the option of going out the (D)oor to the north."
@@ -152,7 +147,6 @@ if direction == "w" || direction == "west" #if/then statements
   else
     abort
   end
-
 end
 
 if direction == "e" || direction == "east"
