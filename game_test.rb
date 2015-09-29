@@ -1,4 +1,6 @@
-puts "Welcome to
+def show_intro
+
+  puts "Welcome to
 
 
    ▄▄▄▄▀ █▄▄▄▄ ████▄ █    █         ▄█▄    ████▄    ▄     ▄▄▄▄▀ █▄▄▄▄ ████▄ █
@@ -14,7 +16,7 @@ puts "Welcome to
 Created by Madelene Campos at Wyncode Academy
 
 ---------------------------------------------------------------------------------
-26 September, 2015
+26-27 September, 2015
 REPL game project"
 
 
@@ -26,28 +28,38 @@ REPL game project"
 
 
 #gave directions to the user
-puts "Oh boy."
-sleep(2) #makes the text read one line at a time, with a bit of space in between
-puts "You made it just in time!"
-sleep(2)
-puts "The bridge, behind you, just happened to crumble and there is now only one way forward! "
-sleep(2)
-puts "You only have one way to go, unless you want to fall to your doom."
-sleep(3)
-
-puts "Type (F) to walk forward now."
-print "> " #this will present a prompt for the user
-
-walk = gets.chomp.downcase #allows the user to type the above direction
- if walk == "f" || walk == "forward"
+  puts "Oh boy."
+  sleep(2) #makes the text read one line at a time, with 2 seconds of space in between
+  puts "You made it just in time!"
+  sleep(2)
+  puts "The bridge, behind you, just happened to crumble and there is now only one way forward! "
+  sleep(2)
+  puts "You only have one way to go, unless you want to fall to your doom."
+  sleep(3)
+  puts "Type (F) to walk forward now."
+  print "> " #this will present a prompt for the user
+end
 
 
-puts "Phew. That was a close one!"
-sleep(2)
+show_intro
+
+walk = gets.chomp.downcase #allows user input
+
+# def ask_question(question, options)
+#   puts
+# end
+
+
+
+
+if walk == "f" || walk == "forward"
+  puts "Phew. That was a close one!"
+  sleep(2)
 else
-  puts "Try again"
+  puts "You must've been nervous and mis-typed. Try again"
   print "> "
-  walk = gets.chomp.downcase
+
+walk = gets.chomp.downcase
   if walk == "f" || walk == "forward"
     puts "Phew. That was a close one!"
   else
@@ -100,7 +112,7 @@ puts "
 
 if direction == "w" || direction == "west" #if/then statements
   puts "You must be hungry! Welcome to the kitchen. The trolls are on their way, so you can't really stay here TOO long, but you may as well stay for a snack. Choose (S)nack to eat a tasty treat. If you'd like to leave immediately, there is always the option of going out the (D)oor to the north."
-sleep(3)
+  sleep(3)
   puts "Choose what you would like to do."
   print "> "
 
@@ -111,21 +123,21 @@ sleep(3)
     puts "YAY! You escaped those idiots. Congrats!"
     puts "
 
-░░░░░░░░░░░░░░░░░░░░░░█████████
-░░███████░░░░░░░░░░███▒▒▒▒▒▒▒▒███
-░░█▒▒▒▒▒▒█░░░░░░░███▒▒▒▒▒▒▒▒▒▒▒▒▒███
-░░░█▒▒▒▒▒▒█░░░░██▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██
-░░░░█▒▒▒▒▒█░░░██▒▒▒▒▒██▒▒▒▒▒▒██▒▒▒▒▒███
-░░░░░█▒▒▒█░░░█▒▒▒▒▒▒████▒▒▒▒████▒▒▒▒▒▒██
-░░░█████████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██
-░░░█▒▒▒▒▒▒▒▒▒▒▒▒█▒▒▒▒▒▒▒▒▒█▒▒▒▒▒▒▒▒▒▒▒██
-░██▒▒▒▒▒▒▒▒▒▒▒▒▒█▒▒▒██▒▒▒▒▒▒▒▒▒▒██▒▒▒▒██
-██▒▒▒███████████▒▒▒▒▒██▒▒▒▒▒▒▒▒██▒▒▒▒▒██
-█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█▒▒▒▒▒▒████████▒▒▒▒▒▒▒██
-██▒▒▒▒▒▒▒▒▒▒▒▒▒▒█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██
-░█▒▒▒███████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██
-░██▒▒▒▒▒▒▒▒▒▒████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█
-░░████████████░░░█████████████████
+    ░░░░░░░░░░░░░░░░░░░░░░█████████
+    ░░███████░░░░░░░░░░███▒▒▒▒▒▒▒▒███
+    ░░█▒▒▒▒▒▒█░░░░░░░███▒▒▒▒▒▒▒▒▒▒▒▒▒███
+    ░░░█▒▒▒▒▒▒█░░░░██▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██
+    ░░░░█▒▒▒▒▒█░░░██▒▒▒▒▒██▒▒▒▒▒▒██▒▒▒▒▒███
+    ░░░░░█▒▒▒█░░░█▒▒▒▒▒▒████▒▒▒▒████▒▒▒▒▒▒██
+    ░░░█████████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██
+    ░░░█▒▒▒▒▒▒▒▒▒▒▒▒█▒▒▒▒▒▒▒▒▒█▒▒▒▒▒▒▒▒▒▒▒██
+    ░██▒▒▒▒▒▒▒▒▒▒▒▒▒█▒▒▒██▒▒▒▒▒▒▒▒▒▒██▒▒▒▒██
+    ██▒▒▒███████████▒▒▒▒▒██▒▒▒▒▒▒▒▒██▒▒▒▒▒██
+    █▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█▒▒▒▒▒▒████████▒▒▒▒▒▒▒██
+    ██▒▒▒▒▒▒▒▒▒▒▒▒▒▒█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██
+    ░█▒▒▒███████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██
+    ░██▒▒▒▒▒▒▒▒▒▒████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█
+    ░░████████████░░░█████████████████
 
 
 
@@ -137,7 +149,8 @@ sleep(3)
 
     "
     abort("Congrats!")
-  else abort
+  else
+    abort
   end
 
 end
@@ -154,21 +167,21 @@ if direction == "e" || direction == "east"
     puts "Phew. Be glad you didn't take a nap. You not only progressed to the next room, you have SURVIVED. Good job."
     puts "
 
-░░░░░░░░░░░░░░░░░░░░░░█████████
-░░███████░░░░░░░░░░███▒▒▒▒▒▒▒▒███
-░░█▒▒▒▒▒▒█░░░░░░░███▒▒▒▒▒▒▒▒▒▒▒▒▒███
-░░░█▒▒▒▒▒▒█░░░░██▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██
-░░░░█▒▒▒▒▒█░░░██▒▒▒▒▒██▒▒▒▒▒▒██▒▒▒▒▒███
-░░░░░█▒▒▒█░░░█▒▒▒▒▒▒████▒▒▒▒████▒▒▒▒▒▒██
-░░░█████████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██
-░░░█▒▒▒▒▒▒▒▒▒▒▒▒█▒▒▒▒▒▒▒▒▒█▒▒▒▒▒▒▒▒▒▒▒██
-░██▒▒▒▒▒▒▒▒▒▒▒▒▒█▒▒▒██▒▒▒▒▒▒▒▒▒▒██▒▒▒▒██
-██▒▒▒███████████▒▒▒▒▒██▒▒▒▒▒▒▒▒██▒▒▒▒▒██
-█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█▒▒▒▒▒▒████████▒▒▒▒▒▒▒██
-██▒▒▒▒▒▒▒▒▒▒▒▒▒▒█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██
-░█▒▒▒███████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██
-░██▒▒▒▒▒▒▒▒▒▒████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█
-░░████████████░░░█████████████████
+    ░░░░░░░░░░░░░░░░░░░░░░█████████
+    ░░███████░░░░░░░░░░███▒▒▒▒▒▒▒▒███
+    ░░█▒▒▒▒▒▒█░░░░░░░███▒▒▒▒▒▒▒▒▒▒▒▒▒███
+    ░░░█▒▒▒▒▒▒█░░░░██▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██
+    ░░░░█▒▒▒▒▒█░░░██▒▒▒▒▒██▒▒▒▒▒▒██▒▒▒▒▒███
+    ░░░░░█▒▒▒█░░░█▒▒▒▒▒▒████▒▒▒▒████▒▒▒▒▒▒██
+    ░░░█████████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██
+    ░░░█▒▒▒▒▒▒▒▒▒▒▒▒█▒▒▒▒▒▒▒▒▒█▒▒▒▒▒▒▒▒▒▒▒██
+    ░██▒▒▒▒▒▒▒▒▒▒▒▒▒█▒▒▒██▒▒▒▒▒▒▒▒▒▒██▒▒▒▒██
+    ██▒▒▒███████████▒▒▒▒▒██▒▒▒▒▒▒▒▒██▒▒▒▒▒██
+    █▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█▒▒▒▒▒▒████████▒▒▒▒▒▒▒██
+    ██▒▒▒▒▒▒▒▒▒▒▒▒▒▒█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██
+    ░█▒▒▒███████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██
+    ░██▒▒▒▒▒▒▒▒▒▒████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█
+    ░░████████████░░░█████████████████
 
 
 
@@ -191,7 +204,7 @@ end
 
 
 if direction == "n" || direction == "north"
-abort("CONGRATULATIONS. You have found the most amazing path out of this joint and away from the evil trolls.")
+  abort("CONGRATULATIONS. You have found the most amazing path out of this joint and away from the evil trolls.")
 end
 
 if direction == "s" || direction == "south"
