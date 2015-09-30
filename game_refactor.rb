@@ -28,19 +28,18 @@ def show_intro
 
   #gave directions to the user
   puts "Oh boy."
- #sleep(2) #makes the text read one line at a time, with 2 seconds of space in between
+ sleep(2) #makes the text read one line at a time, with 2 seconds of space in between
  puts "You made it just in time!"
- #sleep(2)
+ sleep(2)
  puts "The bridge, behind you, just happened to crumble and there is now only one way forward! "
- #sleep(2)
+ sleep(2)
  puts "You only have one way to go, unless you want to fall to your doom."
- #sleep(3)
+ sleep(3)
 end
 
 def step_into_the_castle
   puts "Type (F) to walk forward now."
   print "> " #this will present a prompt for the user
-  # This is the loop you were asking about . You have already implemented it on the real_game_test.rb
   # walk = gets.chomp.downcase #allows the user to type the above direction
   walk = gets.chomp.downcase
   until (walk == "f" || walk == "forward")
@@ -52,23 +51,23 @@ end
 
 def lobby_caption
   puts "If only every decision were that easy!"
-  ##sleep(2)
+  sleep(2)
   puts "If you look around, you will notice that you are in the hall of a magnificent lobby."
-  ##sleep(2)
+  sleep(2)
   puts "Unfortunately, the trolls who were living under the bridge have climbed up just in time and are looking for you."
-  ##sleep(2)
+  sleep(2)
   puts "It's probably best if you leave the lobby."
-  ##sleep(2)
+  sleep(2)
   puts "
 
   "
   puts "You have a few options: If you walk (W)est, you will reach the kitchen. Choose (E)ast to go to the bedroom. Go (N)orth, and you will reach the gazebo. If you choose (S)outh, you will end up falling to your doom. No big deal. Your choice."
-  ##sleep(3)
+  sleep(3)
 end
 
 def kitchen_loop
   puts "You must be hungry! Welcome to the kitchen. The trolls are on their way, so you can't really stay here TOO long, but you may as well stay for a snack. Choose (S)nack to eat a tasty treat. If you'd like to leave immediately, there is always the option of going out the (D)oor to the north."
-  ##sleep(3)
+  sleep(3)
   loop do
     puts "Choose what you would like to do."
     print "> "
